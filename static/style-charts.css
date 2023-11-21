@@ -1,0 +1,700 @@
+.charts-page {
+  background-color: #111111;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.charts-page .div {
+  background-color: #111111;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.charts-page .health-widgets {
+  display: flex;
+  width: 1920px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+
+.charts-page .frame {
+  display: flex;
+  width: 220px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.charts-page .frame-wrapper-new {
+  display: flex;
+  width: 350px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: var(--background);
+  position: relative;
+  --background: #232323;
+  --shadow: #00000055;
+  --y: 0;
+  backface-visibility: visible;
+  box-shadow: 4px 4px 8px var(--shadow);
+  transform: translateY(var(--y));
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.charts-page .frame-wrapper-new.hovered {
+  --y: -10px;
+  outline-width: 10px;
+  outline-color: #cacaca;
+  outline-style: solid;
+  box-shadow: 8px 24px 36px var(--shadow);
+}
+
+.charts-page .frame-wrapper-new.active {
+  --y: 0px;
+  outline-width: 10px;
+  outline-color: #606060;
+  outline-style: solid;
+  box-shadow: 8px 8px 16px var(--shadow);
+}
+
+.charts-page .frame-2 {
+  position: relative;
+  width: 180px;
+  height: 250px;
+}
+
+.charts-page .vector-1 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: -5px;
+  left: 20px;
+}
+
+.charts-page .vector {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: -5px;
+  left: 20px;
+  background: url(../static/img2/vector-3.svg);
+  -webkit-mask-image: url(../static/img2/vector-3.svg);
+  mask-image: url(../static/img2/vector-3.svg) center/contain no-repeat;
+}
+
+.charts-page .subtitle {
+  width: 180px;
+  top: 150px;
+  left: 0;
+  color: #f1a33b;
+  font-size: 36px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .text-wrapper {
+  width: 180px;
+  top: 215px;
+  left: 0;
+  color: #f1a33b;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-2 {
+  width: 180px;
+  top: 150px;
+  left: 0;
+  color: #67ce67;
+  font-size: 36px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-3 {
+  width: 180px;
+  top: 215px;
+  left: 0;
+  color: #67ce67;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .img {
+  position: absolute;
+  width: 130px;
+  height: 140px;
+  top: -5px;
+  left: 25px;
+}
+
+.charts-page .p {
+  width: 260px;
+  top: 150px;
+  left: -40px;
+  color: #e32843;
+  font-size: 36px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .span {
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  color: white;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .text-wrapper-2 {
+  font-size: 32px;
+}
+
+.charts-page .subtitle-4 {
+  width: 250px;
+  top: 215px;
+  left: -35px;
+  color: #e32843;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-112 {
+  width: 270px;
+  height: 60px;
+  left: 0px;
+  font-weight: 800;
+  color: white;
+  font-size: 64px;
+  line-height: 70px;
+  position: relative;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  text-align: center;
+}
+
+.charts-page .frame-wrapper {
+  display: flex;
+  width: 270px;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.charts-page .overlap-group-1 {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  top: 0;
+  left: -40px;
+}
+
+.charts-page .vector-2 {
+  position: absolute;
+  width: 150px;
+  height: 140px;
+  top: -10px;
+  left: 50px;
+  background: url(../static/img2/vector-6.svg);
+  -webkit-mask-image: url(../static/img2/vector-6.svg);
+  mask-image: url(../static/img2/vector-6.svg) center/contain no-repeat;
+}
+
+.charts-page .overlap-group-4 {
+  fill: currentColor;
+  color: currentColor;
+  background-color: currentColor;
+  background: currentColor;
+}
+
+.charts-page .overlap-group-5 {
+  fill: currentColor;
+  color: currentColor;
+  background-color: currentColor;
+  background: currentColor;
+}
+
+.charts-page .overlap-group-6 {
+  fill: currentColor;
+  color: currentColor;
+  background-color: currentColor;
+  background: currentColor;
+}
+
+.charts-page .overlap-group-7 {
+  fill: currentColor;
+  color: currentColor;
+  background-color: currentColor;
+  background: currentColor;
+}
+
+.charts-page .subtitle-5 {
+  width: 260px;
+  top: 150px;
+  left: 0;
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-6 {
+  width: 280px;
+  top: 215px;
+  left: -10px;
+  color: white;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .overlap-group-2 {
+  width: 220px;
+  height: 200px;
+  left: -20px;
+  position: absolute;
+  top: 0;
+}
+
+.charts-page .subtitle-7 {
+  width: 220px;
+  top: 150px;
+  left: 0;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .vector-3 {
+  position: absolute;
+  width: 125px;
+  height: 140px;
+  top: -10px;
+  left: 45px;
+  background: url(../static/img2/vector-5.svg);
+  -webkit-mask-image: url(../static/img2/vector-5.svg);
+  mask-image: url(../static/img2/vector-5.svg) center/contain no-repeat;
+}
+
+.charts-page .subtitle-8 {
+  width: 250px;
+  top: 215px;
+  left: -15px;
+  color: white;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-9 {
+  width: 220px;
+  top: 150px;
+  left: -20px;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-10 {
+  width: 250px;
+  top: 215px;
+  left: -35px;
+  color: white;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .vector-4 {
+  position: absolute;
+  width: 160px;
+  height: 125px;
+  top: 0;
+  left: 10px;
+  background: url(../static/img2/vector-4.svg);
+  -webkit-mask-image: url(../static/img2/vector-4.svg);
+  mask-image: url(../static/img2/vector-4.svg) center/contain no-repeat;
+}
+
+.charts-page .subtitle-11 {
+  width: 200px;
+  top: 150px;
+  left: -7px;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .subtitle-12 {
+  width: 220px;
+  top: 215px;
+  left: -20px;
+  color: white;
+  font-size: 64px;
+  position: absolute;
+  height: 60px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.charts-page .profile {
+  position: absolute;
+  width: 240px;
+  height: 120px;
+  top: 20px;
+  left: 20px;
+}
+
+.charts-page .overlap {
+  position: relative;
+  width: 240px;
+  height: 120px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #12435e, #3A82F7);
+}
+
+.charts-page .text-wrapper-3 {
+  position: absolute;
+  width: 140px;
+  height: 120px;
+  top: 35px;
+  left: 100px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 46px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.charts-page .rectangle-copy {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 15px;
+  left: 15px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.charts-page .path {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 35px;
+  left: 25px;
+}
+
+.charts-page .text-wrapper-4 {
+  position: absolute;
+  width: 35px;
+  top: 50px;
+  left: 40px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Roboto", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.charts-page .VUI {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 20px;
+  left: 280px;
+  background-color: #2c2c2e;
+  border-radius: 60px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.charts-page .ellipse-wrapper {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  top: 17.5px;
+  left: 17.5px;
+  border-radius: 45px;
+  border: 13px solid;
+  border-color: #ffffff;
+}
+
+.charts-page .ellipse {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  top: -15px;
+  left: -5px;
+  transform-box: content-box;
+  transform-origin: 35px center;
+  animation: ellipse-rotate 10s alternate infinite;
+}
+
+@keyframes ellipse-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.charts-page .graphs {
+  position: absolute;
+  width: 1840px;
+  height: 500px;
+  top: 540px;
+  left: 40px;
+}
+
+.charts-page .graphing {
+  width: 1840px;
+  height: 500px;
+  justify-content: center;
+  position: relative;
+  background-color: #232323;
+  border-radius: 25px;
+  box-shadow: 0px 8px 8px #00000040;
+}
+
+.charts-page .group {
+  position: absolute;
+  width: 1040px;
+  height: 80px;
+  top: 40px;
+  left: 450px;
+}
+
+.charts-page .overlap-2 {
+  position: relative;
+  width: 1030px;
+  height: 100px;
+}
+
+.charts-page .date {
+  width: 900px;
+  left: 30px;
+  color: #ffffff;
+  font-size: 46px;
+  position: absolute;
+  height: 80px;
+  top: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.charts-page .date-2 {
+  width: 180px;
+  left: 0;
+  color: #ffffff;
+  font-size: 46px;
+  position: absolute;
+  height: 80px;
+  top: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.charts-page .date-3 {
+  width: 120px;
+  left: 910px;
+  color: #f1a33b;
+  font-size: 42px;
+  position: absolute;
+  height: 80px;
+  top: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.charts-page .vector-5 {
+  position: absolute;
+  width: 85px;
+  height: 75px;
+  top: -15px;
+  left: 810px;
+}
+
+.charts-page .signal-battery {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 55px;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 30px;
+  left: 1720px;
+}
+
+.charts-page .device-stats {
+  position: relative;
+  width: 160px;
+  height: 45px;
+}
+
+.charts-page .cellular-connection {
+  position: absolute;
+  width: 55px;
+  height: 45px;
+  top: 0;
+  left: 0;
+}
+
+.charts-page .battery {
+  position: absolute;
+  width: 90px;
+  height: 45px;
+  top: 0;
+  left: 70px;
+}
+
+.charts-page .capacity-wrapper {
+  width: 80px;
+  height: 45px;
+  left: 0;
+  border-radius: 2px;
+  border: 2px solid;
+  border-color: #ffffffa6;
+  position: absolute;
+  top: 0;
+}
+
+.charts-page .capacity {
+  position: relative;
+  width: 65px;
+  height: 30px;
+  top: 6px;
+  left: 5px;
+  border-radius: 1.33px;
+  background: linear-gradient(to right, rgb(0, 188.06, 7.52) 70.82%, rgba(0, 188.06, 7.52, 0) 70.83%);
+}
+
+.charts-page .cap {
+  position: absolute;
+  width: 5px;
+  height: 15px;
+  top: 15px;
+  left: 85px;
+}

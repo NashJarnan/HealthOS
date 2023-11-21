@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="static/globals-charts.css" />
+  <link rel="stylesheet" href="static/styleguide-charts.css" />
+  <link rel="stylesheet" href="static/style-charts.css" />
+  <script src="static/jquery/dist/jquery.js"></script>
+  <script src="static/chart.js/dist/chart.umd.js"></script>
+  <script src="static/charts.js"></script>
+  <script src="static/chart_data.js"></script>
+</head>
+
+<body>
+  <script> window.onload = generateLoad; </script>
+  <div class="charts-page">
+    <div class="div">
+      <div class="health-widgets">
+        <div class="frame">
+          <div class="frame-wrapper-new">
+            <div class="frame-2" data-click-function=generate_graph()>
+              <div class="overlap-group-5">
+                <img class="vector-1" src="static/img2/vector.svg" />
+                <div class="subtitle">HEART</div>
+                <div class="text-wrapper">105</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="frame-wrapper-new">
+            <div class="frame-2" data-click-function=generate_graph()>
+              <div class="overlap-group-4">
+                <div class="subtitle-2">OXYGEN</div>
+                <div class="subtitle-3">98%</div>
+                <img class="img" src="static/img2/vector-1.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="frame-wrapper-new">
+            <div class="frame-2" data-click-function=generate_graph()>
+              <div class="overlap-group-3">
+                <div class="p">TEMP.</div>
+                <div class="subtitle-4">100.6</div>
+                <img class="img" src="static/img2/vector-7.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-wrapper">
+          <div class="frame-wrapper-new" data-enter-function="generateGraphBP">
+            <div class="frame-2">
+              <div class="overlap-group-1">
+                <div class="subtitle-5" id="BPText">BLOOD PRESS.</div>
+                <div class="subtitle-6" id="BPValue">127/113</div>
+                <div class="vector-2" id="BPIcon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="frame-wrapper-new" data-enter-function="generateGraphGlucose">
+            <div class="frame-2">
+              <div class="overlap-group-2">
+                <div class="subtitle-7" id="GCTextValue">GLUCOSE</div>
+                <div class="vector-3" id="GCIconValue"></div>
+                <div class="subtitle-8" id="glucoseValue">103</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="frame-wrapper-new" data-enter-function="generateGraphSleep">
+            <div class="frame-2">
+              <div class="overlap-group-6">
+                <div class="subtitle-9" id="SLPTextValue">SLEEP</div>
+                <div class="subtitle-10" id="sleepValue">98</div>
+                <div class="vector-4" id="SLPIconValue"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="frame-wrapper-new" data-enter-function="generateGraphStress">
+            <div class="frame-2">
+              <div class="overlap-group-7">
+                <div class="subtitle-11" id="STRTextValue">STRESS</div>
+                <div class="subtitle-12" id="stressValue">64</div>
+                <div class="vector" id="STRIconValue" ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="overlap">
+          <div class="text-wrapper-3">Indra</div>
+          <div class="rectangle-copy"></div>
+          <img class="path" src="static/img2/path.svg" />
+          <div class="text-wrapper-4">80</div>
+        </div>
+      </div>
+      <div class="VUI">
+        <div class="ellipse-wrapper"><img class="ellipse" src="static/img2/ellipse-27.svg" /></div>
+      </div>
+      <div class="graphs">
+        <div class="graphing" id="canvas-container" style="width:100%; height:100%; padding: 20px;">
+          <canvas id="myChart" style="width:100%; height:100%; padding: 20px;"></canvas>
+        </div>
+      </div>
+      <div class="group">
+        <div class="overlap-2">
+          <div class="date" id="DDMY">Thursday, 19 October 2023</div>
+          <div class="date-2" id="clock">12:34</div>
+          <div class="date-3" id="temperature">29°C</div>
+          <img class="vector-5" src="static/img2/vector-2.svg" />
+        </div>
+      </div>
+      <div class="signal-battery">
+        <div class="device-stats">
+          <img class="cellular-connection" src="static/img2/cellular-connection.svg" />
+          <div class="battery">
+            <div class="capacity-wrapper">
+              <div class="capacity"></div>
+              <div id="BPColour"></div>
+              <div id="GCColourValue"></div>
+              <div id="SLPColourValue"></div>
+              <div id="STRColourValue"></div>
+              <div id="HRTColourValue"></div>
+              <div id="OXYColourValue"></div>
+              <div id="OXYColour2Value"></div>
+              <div id="TMPColourValue"></div>
+            </div>
+            <img class="cap" src="static/img2/cap.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
